@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Link from 'next/link';
 
 export const Footer: FC = () => {
   return (
@@ -15,7 +16,9 @@ export const Footer: FC = () => {
         <span className="mx-2">|</span>
         <a href="#">+91 9898989889</a>
         <span className="mx-2">|</span>
-        <a href="#">Code of Conduct</a>
+        <Link href="/coc">
+          <a>Code of Conduct</a>
+        </Link>
       </div>
     </footer>
   );

@@ -23,9 +23,9 @@ export const Navbar: FC = () => {
               SPEAKERS
             </a>
           </Link>
-          <Link href="/sponsers">
+          <Link href="/coc">
             <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-              SPONSERS
+              Code of Conduct
             </a>
           </Link>
           <Link href="/about">
