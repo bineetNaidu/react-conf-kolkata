@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Link from 'next/link';
 
 export const Navbar: FC = () => {
   return (
@@ -17,30 +18,26 @@ export const Navbar: FC = () => {
         <div className="text-sm lg:flex-grow"></div>
 
         <div>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            SPEAKERS
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            SPONSERS
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            ABOUT
-          </a>
-          <a
-            href="#"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            CONTACT
-          </a>
+          <Link href="/speakers">
+            <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              SPEAKERS
+            </a>
+          </Link>
+          <Link href="/sponsers">
+            <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              SPONSERS
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              ABOUT
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              CONTACT
+            </a>
+          </Link>
         </div>
       </div>
     </nav>
