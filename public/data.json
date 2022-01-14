@@ -1,0 +1,64 @@
+{
+  "speakers": [
+    {
+      "_id": "5a9b8f8e7c2a9f0f4f9c6a0b",
+      "name": "John Doe",
+      "bio": "John Doe is a software developer and a speaker. He is a co-founder of the open source community and a regular speaker at conferences.",
+      "avatar": "https://avatars2.githubusercontent.com/u/1409898?s=460&v=4",
+      "links": {
+        "website": "http://john.doe.com",
+        "github": "https://github.com/johndoe"
+      }
+    },
+    {
+      "_id": "5a9b8f8e7c2a9f0f4f9c6a0c",
+      "name": "Jane Doe",
+      "avatar": "https://avatars2.githubusercontent.com/u/1409898?s=460&v=4",
+      "bio": "Jane Doe is a software developer and a speaker. She is a co-founder of the open source community and a regular speaker at conferences.",
+      "links": {
+        "website": "http://jane.doe.com",
+        "github": "https://github.com/janedoe"
+      }
+    },
+    {
+      "_id": "dsadsad",
+      "name": "Jason Doe",
+      "avatar": "https://avatars2.githubusercontent.com/u/1409898?s=460&v=4",
+      "bio": "Jason Doe is a software developer and a speaker. He is a co-founder of the open source community and a regular speaker at conferences.",
+      "links": {
+        "website": "http://jason.doe.com",
+        "github": "https://github.com/jasondoe"
+      }
+    },
+    {
+      "_id": "dsadsadadasdasdas",
+      "name": "Amie Doe",
+      "avatar": "https://avatars2.githubusercontent.com/u/1409898?s=460&v=4",
+      "bio": "Amie Doe is a software developer and a speaker. He is a co-founder of the open source community and a regular speaker at conferences.",
+      "links": {
+        "website": "http://amie.doe.com",
+        "github": "https://github.com/amiedoe"
+      }
+    },
+    {
+      "_id": "5a9b8f8e7c2a9f0f4f9c6a0d",
+      "name": "Sushant Kumar",
+      "bio": "Sushant Kumar is a software engineer at Facebook. He is a member of the React Native team and a co-organizer of the React Native Kolkata meetup.",
+      "avatar": "https://avatars2.githubusercontent.com/u/1409898?s=460&v=4",
+      "links": {
+        "website": "https://sushantkumar.in",
+        "github": ""
+      }
+    },
+    {
+      "_id": "5a9b8f8e7c2a9f0f4f9c6a0e",
+      "name": "Sourav Sharma",
+      "bio": "Sourav Sharma is a software engineer at Google. He is a member of the GDE team and a co-organizer of the Angular Kolkata meetup.",
+      "avatar": "https://avatars2.githubusercontent.com/u/1409898?s=460&v=4",
+      "links": {
+        "website": "https://Souravsharma.in",
+        "github": ""
+      }
+    }
+  ]
+}
