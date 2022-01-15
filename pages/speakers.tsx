@@ -1,10 +1,9 @@
-import { NextPage } from 'next';
+import { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import type { SpeakerType } from '../lib/types';
 import { SpeakerCard } from '../components/SpeakerCard';
-import data from '../public/data.json';
 
-const Speakers: NextPage = () => {
+const Speakers: NextPage<{ speakers: SpeakerType[] }> = ({ speakers }) => {
   return (
     <>
       <Head>
@@ -26,13 +25,51 @@ const Speakers: NextPage = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-4 mb-4">
-          {data.speakers.map((speaker: SpeakerType) => (
+          {speakers.map((speaker: SpeakerType) => (
             <SpeakerCard key={speaker._id} speaker={speaker} />
           ))}
         </div>
       </div>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const Q = `query GetSpeakerList {
+  getSpeakerList {
+    items {
+      _id
+      name
+      bio
+      avatar
+      links {
+        github
+        website
+      }
+    }
+    total
+  }
+}`;
+
+  const URL = process.env.TAKESHAPE_API_ENDPOINT!;
+  const API_KEY = process.env.TAKESHAPE_API_KEY!;
+
+  const res = await fetch(URL, {
+    method: 'POST',
+    body: JSON.stringify({ query: Q }),
+    headers: {
+      Authorization: `Bearer ${API_KEY}`,
+    },
+  });
+
+  const { data } = await res.json();
+
+  return {
+    props: {
+      speakers: data.getSpeakerList.items || [],
+    },
+    revalidate: 60 * 60 * 24,
+  };
 };
 
 export default Speakers;

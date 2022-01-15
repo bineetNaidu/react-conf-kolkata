@@ -6,13 +6,12 @@ A Website for React Conference Kolkata. 50-projects-for-reactjs by Colby Fayock.
 
 - [x] Create a Homepage.
 - [x] Create location info page.
-- [ ] Create Food info page.
 - [x] Create Code of Conduct page.
 - [x] Add Speakers
 - [x] Create Schedule Page.
-- [ ] Create CMS project.
-- [ ] Migrate Content to CMS.
-- [ ] Source Content from CMS.
+- [x] Create CMS project.
+- [x] Migrate Content to CMS.
+- [x] Source Content from CMS.
 
 ## Tools
 
